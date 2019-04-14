@@ -9,7 +9,7 @@ It's developed in Atmel Studio v.7.0.1931
 This project has been developed and tested with a Genuino Micro (Arduino Micro) using the ATmega 32U4. 
 
 ## External Hardware 
-External hardware is an infrared transmitter module (38KHz), IR-LED (940nm), keypad with 12 buttons (Accord AK-804-A-BBW), resistors (check datasheet for max-current on your hardware and choose appropriate resistors).
+External hardware is an infrared transmitter module (38KHz), IR-LED (940nm), keypad with 12 buttons (Accord AK-804-A-BBW), resistors (check datasheet for max-current of your hardware to choose appropriate resistor values).
 
 ## Debugging hardware/software
 * USB till RS232 converter (brand-name: FTDI) for reading serial input with PuTTY.
