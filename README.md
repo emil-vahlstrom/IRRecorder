@@ -7,7 +7,7 @@ Don't expect to much from this project, it's a simple implementation that needs 
 What it can do now is to record an IR-signal, assign the recording to one of nine buttons and using the assigned button to "Play" the signal again. It's not dependent on any protocol, it just checks the time the signal has been on or off. It's tested by recording signals from a remote control (using the RC-5 protocol) and successfully using it on a TV.
 
 ## Future features (might never happen)
-* Persist recorded commands on SRAM
+* Persist recorded commands to SRAM
 * Reset previously recorded commands to default values
 * Enter sleep mode after a few seconds and wake up on button press
 * Use low power in sleep mode
@@ -19,7 +19,7 @@ The IDE used for this project is Atmel Studio v.7.0.1931.
 The dev-board used for testing the code is an Arduino/Genuino Micro board which uses the ATmega 32U4 chipset at a CPU-clock speed of 16MHz. 
 
 ### External Hardware 
-External hardware is an infrared transmitter module (38KHz), IR-LED (940nm), keypad with 12 buttons (Accord AK-804-A-BBW), resistors (check datasheet for max-current of your hardware to choose appropriate resistor values).
+External hardware is an infrared receiver module (38KHz), IR-LED (940nm), keypad with 12 buttons (Accord AK-804-A-BBW), resistors (check datasheet for max-current of your hardware to choose appropriate resistor values).
 
 ### Debugging hardware/software
 * USB to RS232 converter (brand-name: FTDI) for reading serial input with PuTTY or other serial monitors (Baud-rate is 19200)
