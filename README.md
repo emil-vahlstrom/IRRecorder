@@ -2,6 +2,15 @@
 Records and sends IR-remote signals. 
 Don't expect to much from this project, it's a simple implementation that needs refactoring and is just meant to exist as a proof of concept. Perhaps it could give ideas how to send and receive IR-signals without being dependent on specific protocols and not using external libraries.
 
+# Current features
+What it can do now is to record an IR-signal, assign to a button and then replicate it. It's tested with a remote control using the RC-5 protocol.
+
+# Future features (might never happen)
+* Persist recorded commands on SRAM
+* Reset previously recorded commands to default values
+* Enter sleep mode after a few seconds and wake up on button press
+* Use low power in idle mode
+
 ## Development environment
 It's developed in Atmel Studio v.7.0.1931 
 
