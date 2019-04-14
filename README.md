@@ -1,6 +1,6 @@
 # IRRecorder
 Records and sends IR-remote signals.
-Developed in Atmel Studio v.7.0.1931
+Developed in Atmel Studio v.7.0.1931. 
 Don't expect to much from this project. Perhaps it could give ideas how to send and receive IR-signals without being dependent on specific protocols and not using external libraries.
 
 ## How to set up in Atmel Studio?
