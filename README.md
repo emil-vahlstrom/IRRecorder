@@ -20,7 +20,7 @@ External hardware is an infrared transmitter module (38KHz), IR-LED (940nm), key
 * Choose the chipset you're working it. It's only tested with Atmega 32U4 (i.e. Arduino Micro), but should work for most Arduino with a 16MHz CPU.
 * Add external tools: Tools -> External tools -> Add 
   * Title: COM4 Arduino Flash
-  * Command: <<Arduino-folder>>\hardware\tools\avr\bin\avrdude.exe 
+  * Command: < Arduino-folder >\hardware\tools\avr\bin\avrdude.exe 
   * Arguments: -C "<Arduino-folder>\hardware\tools\avr\etc\avrdude.conf" -v -v -p atmega32u4 -c avr109 -P COM4 -b 57600 -D -U flash:w:"Debug\.hex":i
 
 # How to upload code to Arduino?
