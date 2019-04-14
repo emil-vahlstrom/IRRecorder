@@ -15,16 +15,18 @@ External hardware is an infrared transmitter module (38KHz), IR-LED (940nm), key
 * USB till RS232 converter (brand-name: FTDI) for reading serial input with PuTTY.
 * Logic Analyzer used with Saleae Logic 1.2.18
 
-## How to set up in Atmel Studio?
+## How to set up project in Atmel Studio?
 * Start a new Project, choose GCC C Executable Project (C/C++), name it IRRecorder
 * Choose the chipset you're working it. It's only tested with Atmega 32U4 (i.e. Arduino Micro), but should work for most Arduino with a 16MHz CPU.
-* To compile, add external tools: Tools -> External tools -> Add 
-  * Title: <anything>
-  * Command: C:\<path to avrdude>\avrdude.exe 
-  * Arguments: -C "C:\<path to avrdude.conf>\avrdude.conf" -v -v -p atmega32u4 -c avr109 -P COM4 -b 57600 -D -U flash:w:"Debug\.hex":i
+* Add external tools: Tools -> External tools -> Add 
+  * Title: COM4 Arduino Flash
+  * Command: <Arduino-folder>\hardware\tools\avr\bin\avrdude.exe 
+  * Arguments: -C "<Arduino-folder>\hardware\tools\avr\etc\avrdude.conf" -v -v -p atmega32u4 -c avr109 -P COM4 -b 57600 -D -U flash:w:"Debug\.hex":i
 
-## Where to find avrdude.exe?
-It should be located in the Arduino-folder, for example: C:\Program Files (x86)\Arduino\hardware\tools\avr\bin\avrdude.exe
+# How to upload code to Arduino?
+* First build project
+* (optional) Before flashing you may press the reset button on the Arduino to enter the bootloader. 
+* Choose Tools - 'COM4 Arduino Flash' - 'OK'
 
-## Where to find avrdude.conf?
-It should be located in the Arduino-folder, for example: C:\Program Files (x86)\Arduino\hardware\tools\avr\etc\avrdude.conf
+## Have any questions?
+I'm probably not the right person to ask, just use Google.
