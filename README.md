@@ -23,7 +23,7 @@ External hardware is an infrared transmitter module (38KHz), IR-LED (940nm), key
   * Command: \<Arduino-folder\>\hardware\tools\avr\bin\avrdude.exe 
   * Arguments: -C "\<Arduino-folder\>\hardware\tools\avr\etc\avrdude.conf" -v -v -p atmega32u4 -c avr109 -P COM4 -b 57600 -D -U flash:w:"Debug\.hex":i
 
-# How to upload code to Arduino?
+## How to upload code to Arduino?
 * First build project
 * (optional) Before flashing you may press the reset button on the Arduino to enter the bootloader. 
 * Choose Tools - 'COM4 Arduino Flash' - 'OK'
