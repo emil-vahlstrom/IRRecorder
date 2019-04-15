@@ -1,7 +1,7 @@
 # IRRecorder
 Records and sends IR-remote signals. 
 
-Don't expect to much from this project, it's a simple implementation that needs refactoring and is just meant to exist as a proof of concept. Perhaps it could give ideas on how to send and receive IR-signals without being dependent on specific protocols and not using external libraries.
+Don't expect too much from this project, it's a simple implementation that needs refactoring and is just meant to exist as a proof of concept. Perhaps it could give ideas on how to send and receive IR-signals without being dependent on specific protocols and not using external libraries.
 
 ## Current features
 What it can do now is to record an IR-signal, assign the recording to one of nine buttons and using the assigned button to "Play" the signal again. It's not dependent on any protocol, it just checks the time the signal has been on or off. It's tested by recording signals from a remote control (using the RC-5 protocol) and successfully using it on a TV.
